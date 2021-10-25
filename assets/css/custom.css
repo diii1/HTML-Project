@@ -1,0 +1,74 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo{
+    width: 90px;
+}
+
+.menu a{
+    color: black;
+}
+
+.menu a:hover{
+    color: #f47522;
+}
+
+.menu .active a {
+    color: #f47522 !important;    
+}
+
+.hero-img{
+    background-image: url("../img/bg-img.png");
+    height: 920px;
+    background-position: center;
+    background-size: 100% 100%;
+    position: relative;
+    border-radius: 10px;
+    background-origin: border-box;
+}
+
+.foto{
+    width: 355px;
+    height: 355px;
+}
+
+.get{
+    width: 150px;
+    height: 50px;
+    background-color: #f47522;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.touch{
+    color: white;
+    font-weight: bold;
+}
+
+.get a:hover{
+    color: black;
+}
+
+.image{
+    margin-top: 150px;
+}
+
+.text{
+    color: #19345E;
+    margin-top: 200px;
+}
+
+.hello{
+    font-size: 25px;
+}
+
+.name{
+    font-size: 85px;
+}
+
+.build{
+    margin-top: 30px;
+    font-size: 35px;
+}
+
