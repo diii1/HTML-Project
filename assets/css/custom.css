@@ -8,6 +8,10 @@ body{
     width: 90px;
 }
 
+#toggle-btn{
+    background-color: lightgray;
+}
+
 .menu a{
     color: black;
 }
@@ -77,7 +81,7 @@ body{
 /* Contact US */
 .image-kiri{
     background-image: url('../img/charles-rRWiVQzLm7k-unsplash.jpg');
-    height: 820px;
+    height: 755px;
     background-position: center;
     background-size: 100% 100%;
     position: relative;
@@ -99,4 +103,16 @@ body{
 
 .f-contact{
     width: 80%;
+}
+
+.submit{
+    width: 100px;
+    margin-top: 20px;
+    color: white;
+    background-color: #f47522;
+    border-radius: 50px;    
+}
+
+.form{
+    color: #19345E;
 }
