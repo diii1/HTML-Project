@@ -14,9 +14,43 @@
 </head>
 <body>
     <div class="row">
-        <div class="col-md-3 image-kiri"></div>
-        <div class="col-md-9">
-            <h1>Contact Us</h1>
+        <div class="col-md-4 image-kiri">
+            <div class="layer d-flex justify-content-center">
+                <img src="assets/img/logo-ALTA-v2.png" class="logo-biru m-auto">
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="container mt-5 ms-5">
+                <h1>Contact Us</h1>
+                <form class="f-contact">
+                    <div class="mb-3">
+                      <label class="form-label">Full Name *</label>
+                      <input type="text" class="form-control" placeholder="Your Full Name Here..." required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email Address *</label>
+                        <input type="email" class="form-control" placeholder="example@domain.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Phone Number *</label>
+                        <input type="text" class="form-control" placeholder="08573819xxxx" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Nasionality </label>
+                        <select class="form-select">
+                            <option>Indonesia</option>
+                            <option>English</option>
+                            <option>Spanyol</option>
+                            <option>Brazil</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Message </label>
+                        <textarea class="form-control" rows="4" placeholder="Your Message Here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
         </div>
     </div>
 
