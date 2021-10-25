@@ -16,7 +16,7 @@ body{
     color: black;
 }
 
-.menu a:hover{
+.menu .nav .nav-item a:hover{
     color: #f47522;
 }
 
