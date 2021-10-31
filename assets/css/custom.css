@@ -1,118 +1,148 @@
-body{
-    overflow: hidden;
+body {
+    background-size: 100%;
     font-family: 'Roboto', sans-serif;
+    color: #19345e;
 }
 
-/* HOME */
-.logo{
+
+/*Halaman Home*/
+
+.logo {
     width: 90px;
 }
 
-#toggle-btn{
-    background-color: lightgray;
+.home {
+    background-image: url('../img/bg-img.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
-.menu a{
-    color: black;
+.navbar .navbar-nav .nav-link {
+    color: #19345e;
 }
 
-.menu .nav .nav-item a:hover{
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
     color: #f47522;
 }
 
-.active {
-    color: #f47522 !important;    
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .show>.nav-link {
+    color: #f47522;
 }
 
-.hero-img{
-    background-image: url("../img/bg-img.png");
-    height: 920px;
-    background-position: center;
-    background-size: 100% 100%;
-    position: relative;
-    border-radius: 10px;
-    background-origin: border-box;
+.gambar-left {
+    border-radius: 50%;
+    margin-top: 23%;
+    margin-left: 45%;
+    width: 100%;
+    height: 100%;
+    max-width: 355px;
+    max-height: 355px;
 }
 
-.foto{
-    width: 355px;
-    height: 355px;
+.text {
+    margin-top: 12%;
+    padding-left: 5%;
 }
 
-.get{
-    width: 150px;
-    height: 50px;
-    background-color: #f47522;
-    border-radius: 50px;
-    margin-top: 20px;
-}
-
-.touch{
-    color: white;
-    font-weight: bold;
-}
-
-.get a:hover{
-    color: black;
-}
-
-.image{
-    margin-top: 150px;
-}
-
-.text{
-    color: #19345E;
-    margin-top: 200px;
-}
-
-.hello{
+.text-1 {
     font-size: 25px;
 }
 
-.name{
+.text-2 {
     font-size: 85px;
 }
 
-.build{
-    margin-top: 30px;
+.text-3 {
     font-size: 35px;
 }
 
-/* Contact US */
-.image-kiri{
+.getTouch {
+    color: #19345e;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 2%;
+    border-radius: 40px;
+    width: 150px;
+    background-color: #f47522;
+}
+
+.getTouch:hover {
+    color: white;
+}
+
+
+/*Halaman Contact Us*/
+
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
+
+.banner {
     background-image: url('../img/charles-rRWiVQzLm7k-unsplash.jpg');
-    height: 755px;
-    background-position: center;
-    background-size: 100% 100%;
+    background-size: cover;
+    height: 100vh;
+    width: 35%;
     position: relative;
 }
 
 .layer {
     background-color: rgba(25, 52, 94, 0.65);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    width: 286%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.logo-biru{
-    width: 275px;
-    height: 142px;
+.alterra-left {
+    display: flex;
+    margin: 25%;
+    margin-top: 40%;
+    width: 70%;
 }
 
-.f-contact{
-    width: 80%;
+.forms {
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
-.submit{
+.forms h3 {
+    font-size: 33px;
+}
+
+.submit {
     width: 100px;
     margin-top: 20px;
     color: white;
     background-color: #f47522;
-    border-radius: 50px;    
+    border-radius: 50px;
 }
 
-.form{
-    color: #19345E;
+
+/* Halaman Review Message */
+
+@media (min-width: 568px) and (max-width: 768px) {
+    .gambar-left {
+        margin-top: 10%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    .banner {
+        width: 100%;
+        height: 250px;
+    }
+    .layer {
+        width: 100%;
+    }
+    .alterra-left {
+        width: 30%;
+        margin: 0;
+    }
+    .forms {
+        margin-bottom: 100px;
+    }
 }
