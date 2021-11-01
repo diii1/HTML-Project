@@ -22,31 +22,34 @@
                         <table>
                             <tr>
                                 <td>Full Name</td>
-                                <td id="fName"></td>
+                                <td> :</td>
+                                <td class="content" id="fName"></td>
                             </tr>
                             <tr>
                                 <td>Email Address</td>
-                                <td id="email"></td>
+                                <td> :</td>
+                                <td class="content" id="email"></td>
                             </tr>
                             <tr>
                                 <td>Phone Number</td>
-                                <td id="phoneNumber"></td>
+                                <td> :</td>
+                                <td class="content" id="phoneNumber"></td>
                             </tr>
                             <tr>
                                 <td>Nationality</td>
-                                <td id="nationality"></td>
+                                <td> :</td>
+                                <td class="content" id="nationality"></td>
                             </tr>
                         </table>
                         <p class="card-text">
                             <p class="text-message" id="message">
-                                Hi Anne, I’m Mike from Monsters, Inc.
                             </p>
                         </p>
                     </div>
                     <hr class="c-hr m-auto">
                     <div class="footer">
                         <h5>Thanks for contacting us! <br> We will be in touch with you shortly.</h5>
-                        <button class="submit btn text-white" onclick="deleteItems()" name="submit" type="submit">Home</button>
+                        <button class="submit btn text-white" onclick="deleteData()" name="submit" type="submit">Home</button>
                     </div>
                 </div>
             </div>
@@ -66,7 +69,17 @@
     <script>
         let storeLocal = localStorage.getItem("response");
         const datas = JSON.parse(storeLocal);
-        // document.getElementById("fName").innerHTML = storeLocal.map(getName);
+        document.getElementById("fName").innerHTML = datas[0].fullName;
+        document.getElementById("email").innerHTML = datas[0].emails;
+        document.getElementById("phoneNumber").innerHTML = datas[0].phone;
+        document.getElementById("nationality").innerHTML = datas[0].national;
+        document.getElementById("message").innerHTML = datas[0].pesan;
+
+        // Fungsi untuk delete localstorage
+        function deleteData() {
+            localStorage.clear();
+            location.href = 'home.html';
+        }
     </script>
 </body>
 

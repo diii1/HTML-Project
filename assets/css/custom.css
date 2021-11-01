@@ -122,9 +122,6 @@ body {
     border-radius: 50px;
 }
 
-
-/* Halaman Review Message */
-
 @media (min-width: 568px) and (max-width: 768px) {
     .gambar-left {
         margin-top: 10%;

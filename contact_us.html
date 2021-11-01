@@ -39,22 +39,23 @@
                     </div>
                     <div class="mb-1">
                         <label class="form-label">Phone Number <span class="text-danger">*</span></label>
-                        <input type="number" id="phoneNumber" class="form-control" name="phoneNumber" placeholder="08573819xxxx" required>
+                        <input type="number" id="phoneNumber" minlength="12" class="form-control" name="phoneNumber" placeholder="08573819xxxx" required>
                         <div class="invalid-feedback">Phone number cannot be empty</div>
                     </div>
                     <div class="mb-1">
                         <label class="form-label">Nasionality </label>
                         <select class="form-select form" id="nationality" required>
-                            <option selected disabled>Selected</option>
+                            <option selected value="" disabled>Choose Country</option>
                             <option value="Indonesia">Indonesia</option>
-                            <option value="English">English</option>
+                            <option value="English">USA</option>
                             <option value="Spanyol">Spanyol</option>
                             <option value="Brazil">Brazil</option>
                         </select>
+                        <div class="invalid-feedback">Region cannot be empty</div>
                     </div>
                     <div class="mb-1">
                         <label class="form-label">Message </label>
-                        <textarea class="form-control" id="messageText" rows="4" name="message" placeholder="Your Message Here..."></textarea>
+                        <textarea class="form-control" id="messageText" rows="4" name="message" placeholder="Your Message Here..." required></textarea>
                         <div class="invalid-feedback">Message cannot be empty</div>
                     </div>
                     <button type="submit" class="btn submit" onclick="localVal()" name="submit" id="submit">Submit</button>

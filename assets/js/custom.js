@@ -21,11 +21,5 @@ const localVal = () => {
         { fullName: fName, emails: email, phone: phoneNumber, national: nationality, pesan: message }
     ];
     localStorage.setItem("response", JSON.stringify(messages));
-
-    // localStorage.setItem("fullname", fullname);
-    // localStorage.setItem("email", emails);
-    // localStorage.setItem("phone", phones);
-    // localStorage.setItem("nationals", nationals);
-    // localStorage.setItem("messages", messages);
     return false;
 };
